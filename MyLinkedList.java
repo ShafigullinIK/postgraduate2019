@@ -68,6 +68,20 @@ public class MyLinkedList {
         }
         current = head;
     }
+    
+    
+    // by Михаил Марычев https://github.com/Yanov-P
+    public boolean hasValue(int value){
+        while(exist()){
+            if(current.getValue() == value){
+                current = head;
+                return true;
+            }
+            current = current.getNext();
+        }
+        current = head;
+        return false;
+    }
 
 
 
